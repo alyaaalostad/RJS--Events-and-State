@@ -5,7 +5,11 @@ function WandsList(props) {
   let theList = props.wands.map(item => (
     <WandsCard wands={item} key={item.core} />
   ));
-  return <div className="row">{theList}</div>;
+  return (
+    <div className="container">
+      <div className="row">{theList}</div>
+    </div>
+  );
 }
 
 export default WandsList;

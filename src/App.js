@@ -8,14 +8,11 @@ import WandsList from "./WandsList";
 
 function App() {
   return (
-    <div className="back-image">
-      <div className="row">
-        <div className="col-10">
-          <p>
-            <WandsList wands={wands} />
-          </p>
-        </div>
-      </div>
+    <div className="container-fluid back-image">
+      <h1 className="style">Ollivander's Wand Shop!</h1>
+      <p>
+        <WandsList wands={wands} />
+      </p>
     </div>
   );
 }
